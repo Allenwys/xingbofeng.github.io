@@ -4,17 +4,20 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Archives | 邢博峰的博客</title>
+  <title>Hexo主题Yilia | 邢博峰的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Xingbofeng&apos;s Blog.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="邢博峰的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="drag.js自己封装的第一个组件，主要是为了练习自己组件化的能力原生js实现的js拖拽事件使用时，直接创建对象即可123window.onload = function() &amp;#123;    var drag = new Drag(&apos;img&apos;);&amp;#125;;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo主题Yilia">
+<meta property="og:url" content="http://yoursite.com/2014/08/31/drag.js/index.html">
 <meta property="og:site_name" content="邢博峰的博客">
-<meta property="og:description" content="Welcome to Xingbofeng&apos;s Blog.">
+<meta property="og:description" content="drag.js自己封装的第一个组件，主要是为了练习自己组件化的能力原生js实现的js拖拽事件使用时，直接创建对象即可123window.onload = function() &amp;#123;    var drag = new Drag(&apos;img&apos;);&amp;#125;;">
+<meta property="og:image" content="https://github.com/xingbofeng/drag.js/blob/gh-pages/pic.png?raw=true">
+<meta property="og:updated_time" content="2016-08-18T18:18:55.682Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="邢博峰的博客">
-<meta name="twitter:description" content="Welcome to Xingbofeng&apos;s Blog.">
+<meta name="twitter:title" content="Hexo主题Yilia">
+<meta name="twitter:description" content="drag.js自己封装的第一个组件，主要是为了练习自己组件化的能力原生js实现的js拖拽事件使用时，直接创建对象即可123window.onload = function() &amp;#123;    var drag = new Drag(&apos;img&apos;);&amp;#125;;">
+<meta name="twitter:image" content="https://github.com/xingbofeng/drag.js/blob/gh-pages/pic.png?raw=true">
   
     <link rel="alternative" href="/atom.xml" title="邢博峰的博客" type="application/atom+xml">
   
@@ -194,115 +197,121 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-drag.js" class="article article-type-post" itemscope itemprop="blogPost">
   
+    <div class="article-meta">
+      <a href="/2014/08/31/drag.js/" class="article-date">
+  	<time datetime="2014-08-31T08:03:00.000Z" itemprop="datePublished">2014-08-31</time>
+</a>
+    </div>
   
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo主题Yilia
+    </h1>
+  
+
+      </header>
       
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/主题/">主题</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2014" class="archive-year">2014</a>
-        </div>
-        <div class="archives">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2014/08/31/About Me/" class="archive-article-date">
-  	<time datetime="2014-08-31T08:03:00.000Z" itemprop="datePublished">Aug 31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/08/31/About Me/">Hexo主题Yilia</a>
-    </h1>
-  
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="drag-js"><a href="#drag-js" class="headerlink" title="drag.js"></a>drag.js</h1><h3 id="自己封装的第一个组件，主要是为了练习自己组件化的能力"><a href="#自己封装的第一个组件，主要是为了练习自己组件化的能力" class="headerlink" title="自己封装的第一个组件，主要是为了练习自己组件化的能力"></a>自己封装的第一个组件，主要是为了练习自己组件化的能力</h3><h3 id="原生js实现的js拖拽事件"><a href="#原生js实现的js拖拽事件" class="headerlink" title="原生js实现的js拖拽事件"></a>原生js实现的js拖拽事件</h3><h3 id="使用时，直接创建对象即可"><a href="#使用时，直接创建对象即可" class="headerlink" title="使用时，直接创建对象即可"></a>使用时，直接创建对象即可</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> drag = <span class="keyword">new</span> Drag(<span class="string">'img'</span>);</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p><a href="https://github.com/xingbofeng/drag.js/blob/gh-pages/demo.html" target="_blank" rel="external">demo</a><br><br><a href="https://github.com/xingbofeng/drag.js/blob/gh-pages/drag.js" target="_blank" rel="external">drag.js</a></p>
+<h3 id="附：screen-client-offset的差别"><a href="#附：screen-client-offset的差别" class="headerlink" title="附：screen,client,offset的差别"></a>附：screen,client,offset的差别</h3><p><img src="https://github.com/xingbofeng/drag.js/blob/gh-pages/pic.png?raw=true" alt="image"></p>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/主题/">主题</a></li></ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    
   </div>
-</article>
   
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2014/08/31/drag.js/" class="archive-article-date">
-  	<time datetime="2014-08-31T08:03:00.000Z" itemprop="datePublished">Aug 31</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/08/31/drag.js/">Hexo主题Yilia</a>
-    </h1>
+    <a href="/2014/08/31/About Me/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Hexo主题Yilia
+        
+      </div>
+    </a>
   
+  
+    <a href="/2014/08/31/关于封装/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo主题Yilia</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/主题/">主题</a></li></ul>
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2014/08/31/关于封装/" class="archive-article-date">
-  	<time datetime="2014-08-31T08:03:00.000Z" itemprop="datePublished">Aug 31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/08/31/关于封装/">Hexo主题Yilia</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/主题/">主题</a></li></ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="drag.js" data-title="Hexo主题Yilia" data-url="http://yoursite.com/2014/08/31/drag.js/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 </div>
       <footer id="footer">
@@ -328,8 +337,8 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

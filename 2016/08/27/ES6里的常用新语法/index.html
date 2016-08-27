@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>ES6里的常用新语法 | Encounter&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="ES6版本已经被各大浏览器广泛支持，很多前端框架也已经使用 ES6，并且还有 Babel 可以做兼容处理，所以ES6已经进入了应用阶段如果您对 ES6 还不太熟悉，下面4个简单的基础用法可以帮助您快速了解ES6">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ES6里的常用新语法">
+<meta property="og:url" content="http://yoursite.com/2016/08/27/ES6里的常用新语法/index.html">
+<meta property="og:site_name" content="Encounter's Blog">
+<meta property="og:description" content="ES6版本已经被各大浏览器广泛支持，很多前端框架也已经使用 ES6，并且还有 Babel 可以做兼容处理，所以ES6已经进入了应用阶段如果您对 ES6 还不太熟悉，下面4个简单的基础用法可以帮助您快速了解ES6">
+<meta property="og:updated_time" content="2016-08-27T06:29:58.018Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ES6里的常用新语法">
+<meta name="twitter:description" content="ES6版本已经被各大浏览器广泛支持，很多前端框架也已经使用 ES6，并且还有 Babel 可以做兼容处理，所以ES6已经进入了应用阶段如果您对 ES6 还不太熟悉，下面4个简单的基础用法可以帮助您快速了解ES6">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="undefined" class="js-avatar show" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Encounter</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">encounterxingbofeng@outlook.com</p>
+		
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Encounter</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="/undefined" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Encounter</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">encounterxingbofeng@outlook.com</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-ES6里的常用新语法" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/27/ES6里的常用新语法/" class="article-date">
+  	<time datetime="2016-08-27T06:10:00.000Z" itemprop="datePublished">2016-08-27</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ES6里的常用新语法
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="ES6版本已经被各大浏览器广泛支持，很多前端框架也已经使用-ES6，并且还有-Babel-可以做兼容处理，所以ES6已经进入了应用阶段"><a href="#ES6版本已经被各大浏览器广泛支持，很多前端框架也已经使用-ES6，并且还有-Babel-可以做兼容处理，所以ES6已经进入了应用阶段" class="headerlink" title="ES6版本已经被各大浏览器广泛支持，很多前端框架也已经使用 ES6，并且还有 Babel 可以做兼容处理，所以ES6已经进入了应用阶段"></a>ES6版本已经被各大浏览器广泛支持，很多前端框架也已经使用 ES6，并且还有 Babel 可以做兼容处理，所以ES6已经进入了应用阶段</h1><h1 id="如果您对-ES6-还不太熟悉，下面4个简单的基础用法可以帮助您快速了解ES6"><a href="#如果您对-ES6-还不太熟悉，下面4个简单的基础用法可以帮助您快速了解ES6" class="headerlink" title="如果您对 ES6 还不太熟悉，下面4个简单的基础用法可以帮助您快速了解ES6"></a>如果您对 ES6 还不太熟悉，下面4个简单的基础用法可以帮助您快速了解ES6</h1><a id="more"></a>
+<ol>
+<li>使用 let 和 const 声明变量<br>在传统的 ES5 代码中，变量的声明有两个主要问题</li>
+</ol>
+<ul>
+<li>缺少块作用域的支持</li>
+<li>不能声明常量<br>ES6中，这两个问题被解决了，增加了两个新的关键字： let 和 const<br>块作用域使用 let<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</div><div class="line">　<span class="keyword">if</span> (<span class="literal">true</span>) &#123;</div><div class="line">　<span class="keyword">var</span> b = <span class="number">2</span>;</div><div class="line">　&#125;</div><div class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></div><div class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 2</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>ES5 中 if 块内声明的变量 b 可以在块外访问<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// in ES6</span></div><div class="line">　　<span class="keyword">let</span> a = <span class="number">1</span>;</div><div class="line">　　<span class="keyword">if</span> (<span class="literal">true</span>) &#123;</div><div class="line">　　	<span class="keyword">let</span> b = <span class="number">2</span>;</div><div class="line">　　&#125;</div><div class="line">　　<span class="built_in">console</span>.log(a); <span class="comment">// 1</span></div><div class="line">　　<span class="built_in">console</span>.log(b); <span class="comment">// ReferenceError: b is not defined</span></div></pre></td></tr></table></figure></p>
+<p>ES6 中 if 块儿内使用 let 声明的变量 b 不能在块儿外访问<br>下面这段代码是常见的一个比较迷惑人的情况<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = [];</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">0</span>; i&lt; <span class="number">5</span>; i++) &#123;</div><div class="line">    a.push(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(i);</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line">a.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</div><div class="line">    value();</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>运行结果是：5, 5, 5, 5, 5<br>使用 let 声明循环中的变量i<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = [];</div><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i=<span class="number">0</span>; i&lt; <span class="number">5</span>; i++) &#123;</div><div class="line">    a.push(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(i);</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line">a.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</div><div class="line">    value();</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>运行结果是：0, 1, 2, 3, 4<br>定义常量使用 const<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// in ES6</span></div><div class="line">　　<span class="keyword">const</span> MY_CONSTANT = <span class="literal">true</span>;</div><div class="line">　　MY_CONSTANT = <span class="literal">false</span>; <span class="comment">// Uncaught TypeError: Assignment to constant variable</span></div></pre></td></tr></table></figure></p>
+<p>ES6 中使用 const 声明的常量是不可以被改的</p>
+<ol>
+<li>模板字符串<br>下面这种字符串与变量的拼接方式是比较常见的<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> url = ‘http:<span class="comment">//www.’ + domain + ‘.com/’ + path + ‘?’ + queryParams;</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>ES6 提供了简洁的用法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> url = <span class="string">`http://www.<span class="subst">$&#123;domain&#125;</span>.com/<span class="subst">$&#123;path&#125;</span>?<span class="subst">$&#123;queryParams&#125;</span>`</span>;</div></pre></td></tr></table></figure></p>
+<ol>
+<li>新的 Set 和 Map 对象<br>ES5 中我们经常使用数组来存储动态数据，例如<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> collection = [];</div><div class="line">　　collection.push(<span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>);</div><div class="line">　　<span class="built_in">console</span>.log(collection); <span class="comment">// [ 1, 2, 1]</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>其中包含了重复数据，如果不想有重复数据，需要使用代码判断<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">addToCollection</span>(<span class="params">collection, value</span>) </span>&#123;</div><div class="line">　　<span class="keyword">if</span> (collection.indexOf(value) &lt; <span class="number">0</span>) &#123;</div><div class="line">　　collection.push(value)</div><div class="line">　　&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>ES6 提供了 Set 对象，处理这个情况就方便多了<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> collection = <span class="keyword">new</span> <span class="built_in">Set</span>();</div><div class="line">collection.add(<span class="number">1</span>);</div><div class="line">collection.add(<span class="number">2</span>);</div><div class="line">collection.add(<span class="number">1</span>);</div><div class="line"><span class="built_in">console</span>.log(collection); <span class="comment">// Set &#123;1, 2&#125;</span></div></pre></td></tr></table></figure></p>
+<p>Set 还可以方便的遍历集合，和处理集合中的数据<br>ES5 中通常使用 object 来存储键值对数据，例如<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> collection = &#123;&#125;;</div><div class="line">collection.a = ‘abc’;</div><div class="line">collection.b = ‘xyz’;</div></pre></td></tr></table></figure></p>
+<p>ES6 有了 Map，就可以这样使用<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> collection = <span class="keyword">new</span> <span class="built_in">Map</span>();</div><div class="line">collection.set(‘a’, ‘abc’);</div><div class="line">collection.set(‘b’, ‘xyz’);</div></pre></td></tr></table></figure></p>
+<p>遍历也很简单<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">collection.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">value, key</span>) </span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(key + <span class="string">":"</span> + value);</div><div class="line">&#125;);</div><div class="line"><span class="built_in">console</span>.log(collection.size);</div></pre></td></tr></table></figure></p>
+<ol>
+<li>函数参数<br>ES6 中函数的参数有两个新特性</li>
+</ol>
+<ul>
+<li>默认值<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">doSomething</span>(<span class="params">someObject</span>) </span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(someObject);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这里有可能会出现运行时错误，需要验证参数<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">doSomething</span>(<span class="params">someObject</span>) </span>&#123;</div><div class="line">　　<span class="keyword">if</span> (someObject === <span class="literal">undefined</span>) &#123;</div><div class="line">　　	someObject = &#123;&#125;;</div><div class="line">	&#125;</div><div class="line">　　<span class="built_in">console</span>.log(someObject);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>这类的验证代码非常普遍，ES6 中可以给参数设置默认值，就简单了很多<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">doSomething</span>(<span class="params">someObject = &#123;&#125;</span>) </span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(someObject);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<ul>
+<li>对象解构<br>我们常会把一个包含键值对的对象做为参数传给某个函数，然后在函数内获取对象的各个属性<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">doSomething</span>(<span class="params">someObject</span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> one = someObject.propOne;</div><div class="line">	<span class="built_in">console</span>.log(one);</div><div class="line">	<span class="keyword">var</span> two = someObject.propTwo;</div><div class="line">	<span class="built_in">console</span>.log(two);</div><div class="line">	<span class="keyword">var</span> three = someObject.propThree;</div><div class="line">	<span class="built_in">console</span>.log(three);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>ES6 可以让我们直接在参数中解构对象参数<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">doSomething</span>(<span class="params">&#123;propOne,propTwo,propThree&#125;</span>) </span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(propOne);</div><div class="line">	<span class="built_in">console</span>.log(propTwo);</div><div class="line">	<span class="built_in">console</span>.log(propThree);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/08/19/关于封装/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">javascript封装的相关方法</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Encounter
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+
+<script>
+	var yiliaConfig = {
+		fancybox: undefined,
+		mathjax: undefined,
+		animate: undefined,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: undefined,
+		root: /
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -4,18 +4,20 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>我的随笔 | Encounter&#39;s Blog</title>
+  <title>UI组件之拖拽 | Encounter&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Encounter&apos;s Blog.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="我的随笔">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="自己封装的第一个组件，主要是为了练习自己组件化的能力原生js实现的js拖拽事件使用时，直接创建对象即可123window.onload = function() &amp;#123;    var drag = new Drag(&apos;img&apos;);&amp;#125;;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UI组件之拖拽">
+<meta property="og:url" content="http://yoursite.com/2016/08/19/UI组件之拖拽/index.html">
 <meta property="og:site_name" content="Encounter's Blog">
-<meta property="og:description" content="Welcome to Encounter&apos;s Blog.">
-<meta property="og:updated_time" content="2016-09-03T18:00:22.858Z">
+<meta property="og:description" content="自己封装的第一个组件，主要是为了练习自己组件化的能力原生js实现的js拖拽事件使用时，直接创建对象即可123window.onload = function() &amp;#123;    var drag = new Drag(&apos;img&apos;);&amp;#125;;">
+<meta property="og:image" content="https://github.com/xingbofeng/drag.js/blob/gh-pages/pic.png?raw=true">
+<meta property="og:updated_time" content="2016-09-04T15:48:51.293Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的随笔">
-<meta name="twitter:description" content="Welcome to Encounter&apos;s Blog.">
+<meta name="twitter:title" content="UI组件之拖拽">
+<meta name="twitter:description" content="自己封装的第一个组件，主要是为了练习自己组件化的能力原生js实现的js拖拽事件使用时，直接创建对象即可123window.onload = function() &amp;#123;    var drag = new Drag(&apos;img&apos;);&amp;#125;;">
+<meta name="twitter:image" content="https://github.com/xingbofeng/drag.js/blob/gh-pages/pic.png?raw=true">
   
     <link rel="alternative" href="/atom.xml" title="Encounter&#39;s Blog" type="application/atom+xml">
   
@@ -205,7 +207,13 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-UI组件之拖拽" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/19/UI组件之拖拽/" class="article-date">
+  	<time datetime="2016-08-18T16:00:00.000Z" itemprop="datePublished">2016-08-19</time>
+</a>
+    </div>
   
   <div class="article-inner">
     
@@ -216,7 +224,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      我的随笔
+      UI组件之拖拽
     </h1>
   
 
@@ -224,6 +232,10 @@
       
       <div class="article-info article-info-post">
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端开发/">前端开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/组件/">组件</a></li></ul>
+	</div>
+
         
 
         <div class="clearfix"></div>
@@ -232,13 +244,42 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="自己封装的第一个组件，主要是为了练习自己组件化的能力"><a href="#自己封装的第一个组件，主要是为了练习自己组件化的能力" class="headerlink" title="自己封装的第一个组件，主要是为了练习自己组件化的能力"></a>自己封装的第一个组件，主要是为了练习自己组件化的能力</h3><h3 id="原生js实现的js拖拽事件"><a href="#原生js实现的js拖拽事件" class="headerlink" title="原生js实现的js拖拽事件"></a>原生js实现的js拖拽事件</h3><h3 id="使用时，直接创建对象即可"><a href="#使用时，直接创建对象即可" class="headerlink" title="使用时，直接创建对象即可"></a>使用时，直接创建对象即可</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> drag = <span class="keyword">new</span> Drag(<span class="string">'img'</span>);</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>拖拽事件分为三个部分</p>
+<ol>
+<li><p>按下鼠标事件，此事件发生时，获取焦点位置。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">Drag.prototype.mouseDown = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> me = <span class="keyword">this</span>;</div><div class="line">    <span class="keyword">this</span>.disX = e.clientX - <span class="keyword">this</span>.obj.offsetLeft;</div><div class="line">    <span class="keyword">this</span>.disY = e.clientY - <span class="keyword">this</span>.obj.offsetTop;</div><div class="line">    <span class="built_in">document</span>.onmousemove = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>)</span>&#123;</div><div class="line">        <span class="keyword">var</span> e = e || <span class="built_in">window</span>.event;</div><div class="line">        me.mouseMove(e);</div><div class="line">    &#125;;  </div><div class="line">    <span class="built_in">document</span>.onmouseup = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</div><div class="line">        me.mouseUp();</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+</li>
+<li><p>移动鼠标事件，此事件发生时，让元素位置随焦点位置改变而改变。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Drag.prototype.mouseMove = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.obj.style.left = (e.clientX - <span class="keyword">this</span>.disX) + <span class="string">'px'</span>;</div><div class="line">    <span class="keyword">this</span>.obj.style.top = (e.clientY - <span class="keyword">this</span>.disY) + <span class="string">'px'</span>;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+</li>
+<li><p>释放鼠标事件，此事件发生时，清空前两个事件执行函数，以便下一次调用不出现不可预知的后果。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Drag.prototype.mouseMove = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.obj.style.left = (e.clientX - <span class="keyword">this</span>.disX) + <span class="string">'px'</span>;</div><div class="line">    <span class="keyword">this</span>.obj.style.top = (e.clientY - <span class="keyword">this</span>.disY) + <span class="string">'px'</span>;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><a href="https://github.com/xingbofeng/drag.js/blob/gh-pages/demo.html" target="_blank" rel="external">猛戳此处查看demo</a><br><a href="https://github.com/xingbofeng/drag.js/blob/gh-pages/drag.js" target="_blank" rel="external">猛戳此处查看源码</a><br>附：screen,client,offset的差别<br><img src="https://github.com/xingbofeng/drag.js/blob/gh-pages/pic.png?raw=true" alt="image"></p>
+
       
     </div>
     
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2016/08/19/javascript封装的相关方法/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          javascript封装的相关方法
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
   
 </article>
 
@@ -264,6 +305,26 @@
 
 
 
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="UI组件之拖拽" data-title="UI组件之拖拽" data-url="http://yoursite.com/2016/08/19/UI组件之拖拽/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
@@ -293,7 +354,7 @@
         mathjax: true,
         animate: false,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,

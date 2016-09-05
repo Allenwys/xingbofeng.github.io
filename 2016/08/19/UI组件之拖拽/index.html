@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Encounter's Blog">
 <meta property="og:description" content="自己封装的第一个组件，主要是为了练习自己组件化的能力原生js实现的js拖拽事件使用时，直接创建对象即可123window.onload = function() &amp;#123;    var drag = new Drag(&apos;img&apos;);&amp;#125;;">
 <meta property="og:image" content="https://github.com/xingbofeng/drag.js/blob/gh-pages/pic.png?raw=true">
-<meta property="og:updated_time" content="2016-09-04T15:48:51.293Z">
+<meta property="og:updated_time" content="2016-09-05T04:04:32.811Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="UI组件之拖拽">
 <meta name="twitter:description" content="自己封装的第一个组件，主要是为了练习自己组件化的能力原生js实现的js拖拽事件使用时，直接创建对象即可123window.onload = function() &amp;#123;    var drag = new Drag(&apos;img&apos;);&amp;#125;;">
@@ -142,6 +142,8 @@
 			        
 			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://segmentfault.com/u/xingbofengfe">segmentfaullt</a>
 			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://music.163.com/#/user/home?id=267389428">歌单</a>
+			        
 			        </div>
 				</section>
 				
@@ -255,7 +257,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Drag.prototype.mouseMove = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.obj.style.left = (e.clientX - <span class="keyword">this</span>.disX) + <span class="string">'px'</span>;</div><div class="line">    <span class="keyword">this</span>.obj.style.top = (e.clientY - <span class="keyword">this</span>.disY) + <span class="string">'px'</span>;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 </li>
 <li><p>释放鼠标事件，此事件发生时，清空前两个事件执行函数，以便下一次调用不出现不可预知的后果。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Drag.prototype.mouseMove = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.obj.style.left = (e.clientX - <span class="keyword">this</span>.disX) + <span class="string">'px'</span>;</div><div class="line">    <span class="keyword">this</span>.obj.style.top = (e.clientY - <span class="keyword">this</span>.disY) + <span class="string">'px'</span>;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Drag.prototype.mouseMove = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>)</span>&#123;</div><div class="line">    <span class="built_in">document</span>.onmousemove = <span class="literal">null</span>;</div><div class="line">    <span class="built_in">document</span>.onmouseup = <span class="literal">null</span>;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 </li>
 </ol>
 <p><a href="https://github.com/xingbofeng/drag.js/blob/gh-pages/demo.html" target="_blank" rel="external">猛戳此处查看demo</a><br><a href="https://github.com/xingbofeng/drag.js/blob/gh-pages/drag.js" target="_blank" rel="external">猛戳此处查看源码</a><br>附：screen,client,offset的差别<br><img src="https://github.com/xingbofeng/drag.js/blob/gh-pages/pic.png?raw=true" alt="image"></p>

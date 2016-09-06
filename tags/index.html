@@ -42,6 +42,16 @@
 		
 		<p class="header-subtitle">encounterxingbofeng@gamil.com</p>
 		
+		
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        
+
 
 		
 			<div class="switch-btn">
@@ -322,6 +332,10 @@
 <script src="//7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
 <script src="/js/main.js"></script>
 
+<script> 
+yiliaConfig.search = true;
+yiliaConfig.rootUrl = "\/";
+</script>
 
 
 

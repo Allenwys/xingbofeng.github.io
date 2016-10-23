@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xingbofeng.github.io/"/>
-  <updated>2016-10-21T18:11:01.973Z</updated>
+  <updated>2016-10-23T15:51:26.548Z</updated>
   <id>http://xingbofeng.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xingbofeng.github.io/2016/10/22/19%E5%B2%81%EF%BC%8C%E5%86%99%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E8%AF%9D%E2%80%94%E2%80%94%E8%AE%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E7%9F%A5%E4%B9%8E%E5%A4%84%E5%A5%B3%E7%AD%94/"/>
     <id>http://xingbofeng.github.io/2016/10/22/19岁，写给自己的话——记自己的知乎处女答/</id>
     <published>2016-10-21T18:07:00.000Z</published>
-    <updated>2016-10-21T18:11:01.973Z</updated>
+    <updated>2016-10-23T15:51:26.548Z</updated>
     
     <content type="html"><![CDATA[<p>自己的知乎处女答，<a href="https://www.zhihu.com/question/51806419/answer/127759116" target="_blank" rel="external">原问题</a>“什么造就了现在的你？”<br><a id="more"></a><br>作者：Encounter<br>链接：<a href="https://www.zhihu.com/question/51806419/answer/127759116" target="_blank" rel="external">https://www.zhihu.com/question/51806419/answer/127759116</a><br>来源：知乎<br>著作权归作者所有，转载请联系作者获得授权。</p>
 <p>嗯，先说说我吧，四川人，某电子信息类大学在读大三学生，软件工程专业，web前端初级开发者。</p>
@@ -62,6 +62,8 @@
     
     
       <category term="随笔" scheme="http://xingbofeng.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="生活" scheme="http://xingbofeng.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
@@ -134,7 +136,7 @@
     <link href="http://xingbofeng.github.io/2016/09/05/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://xingbofeng.github.io/2016/09/05/hexo+github搭建个人博客/</id>
     <published>2016-09-05T08:00:00.000Z</published>
-    <updated>2016-09-05T09:54:22.000Z</updated>
+    <updated>2016-10-23T15:52:01.344Z</updated>
     
     <content type="html"><![CDATA[<p>断断续续地弄这个博客也算是弄了很久了，突然就只是想写一篇文章来说说自己搭这玩意的过程和踩过的坑。<br>主题用的是yilia主题，总的来说这个主题虽然很清新但是由于现在存有一些bug需要自己手动修改代码。如果觉得过于麻烦的话建议使用另外的主题。（貌似有一款主题NexT很是受欢迎，读者可以自行尝试）<br><a id="more"></a></p>
 <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ol>
@@ -182,9 +184,9 @@
     </summary>
     
     
-      <category term="随笔" scheme="http://xingbofeng.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="hexo" scheme="http://xingbofeng.github.io/tags/hexo/"/>
+    
+      <category term="github" scheme="http://xingbofeng.github.io/tags/github/"/>
     
   </entry>
   

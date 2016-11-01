@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xingbofeng.github.io/"/>
-  <updated>2016-10-23T15:51:26.548Z</updated>
+  <updated>2016-11-01T01:03:42.861Z</updated>
   <id>http://xingbofeng.github.io/</id>
   
   <author>
@@ -14,6 +14,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>总结CSS常见重难点</title>
+    <link href="http://xingbofeng.github.io/2016/11/01/%E6%80%BB%E7%BB%93CSS%E5%B8%B8%E8%A7%81%E9%87%8D%E9%9A%BE%E7%82%B9/"/>
+    <id>http://xingbofeng.github.io/2016/11/01/总结CSS常见重难点/</id>
+    <published>2016-11-01T00:11:00.000Z</published>
+    <updated>2016-11-01T01:03:42.861Z</updated>
+    
+    <content type="html"><![CDATA[<p>以前的自己一直有一个误区：前端开发，重点还是js，而css的问题，遇到了再去查就行了。<br>最近有意识到自己存在这样的问题，因此此文就用作记录自己在开发过程中所遇到的一些css方面的问题吧。<br><a id="more"></a></p>
+<h1 id="css水平-垂直居中"><a href="#css水平-垂直居中" class="headerlink" title="css水平/垂直居中"></a>css水平/垂直居中</h1><p>其实有很多很多种方法可以做到水平/垂直居中，但是各种方法的使用场景以及浏览器兼容性各不相同，以前也没有好好地总结过，在此也好做一个总结吧。</p>
+<p>相关demo : <a href="http://www.xingbofeng.com/demos/demo1.html" target="_blank" rel="external">http://www.xingbofeng.com/demos/demo1.html</a></p>
+<ul>
+<li>定宽块级元素的水平居中</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box1</span> &#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">200px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">	<span class="attribute">margin</span>:<span class="number">0</span> auto;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>定宽高，通过负外边距和绝对定位块级元素水平/垂直居中</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box2</span> &#123;</div><div class="line">	<span class="attribute">position</span>: absolute;</div><div class="line">	<span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">	<span class="attribute">left</span>: <span class="number">50%</span>;</div><div class="line">	<span class="attribute">top</span>: <span class="number">50%</span>;</div><div class="line">	<span class="attribute">margin-left</span>: -<span class="number">100px</span>;</div><div class="line">	<span class="attribute">margin-top</span>: -<span class="number">100px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>定宽高，通过margin:auto和绝对定位实现的块级元素水平/垂直居中</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box3</span> &#123;</div><div class="line">	<span class="attribute">position</span>: absolute;</div><div class="line">	<span class="attribute">margin</span>: auto;</div><div class="line">	<span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">top</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">right</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>通过css3的flex布局实现水平/垂直居中</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.flexcontainer</span> &#123;</div><div class="line">	<span class="attribute">display</span>: flex;</div><div class="line">	<span class="attribute">justify-content</span>: center;</div><div class="line">	<span class="attribute">align-items</span>: center;</div><div class="line">	<span class="comment">/*对包围box的容器设置的css*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>通过css3的transform属性实现居中</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box5</span> &#123;</div><div class="line">	<span class="attribute">position</span>: absolute;</div><div class="line">	<span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">	<span class="attribute">top</span>: <span class="number">50%</span>;</div><div class="line">	<span class="attribute">left</span>: <span class="number">50%</span>;</div><div class="line">	<span class="attribute">transform</span>: <span class="built_in">translate</span>(-50%,-50%);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>通过display:table-cell实现居中</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.tablecontainer</span> &#123;</div><div class="line">	<span class="attribute">display</span>: table;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.box6</span> &#123;</div><div class="line">	<span class="attribute">display</span>: table-cell;</div><div class="line">	<span class="attribute">vertical-align</span>: middle;</div><div class="line">	<span class="attribute">text-align</span>: center;</div><div class="line">	<span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>通过inline-block实现水平居中</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.container</span> &#123;</div><div class="line">	<span class="attribute">text-align</span>: center;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.box7</span> &#123;</div><div class="line">	<span class="attribute">display</span>: inline-block;</div><div class="line">	<span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以前的自己一直有一个误区：前端开发，重点还是js，而css的问题，遇到了再去查就行了。&lt;br&gt;最近有意识到自己存在这样的问题，因此此文就用作记录自己在开发过程中所遇到的一些css方面的问题吧。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="前端开发" scheme="http://xingbofeng.github.io/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="css" scheme="http://xingbofeng.github.io/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>19岁，写给自己的话——记自己的知乎处女答</title>
@@ -184,9 +236,9 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://xingbofeng.github.io/tags/hexo/"/>
-    
       <category term="github" scheme="http://xingbofeng.github.io/tags/github/"/>
+    
+      <category term="hexo" scheme="http://xingbofeng.github.io/tags/hexo/"/>
     
   </entry>
   

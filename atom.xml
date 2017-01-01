@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xingbofeng.github.io/"/>
-  <updated>2016-12-13T13:31:39.615Z</updated>
+  <updated>2017-01-01T13:34:57.660Z</updated>
   <id>http://xingbofeng.github.io/</id>
   
   <author>
@@ -14,6 +14,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的2016年总结</title>
+    <link href="http://xingbofeng.github.io/2017/01/01/%E6%88%91%E7%9A%842016%E5%B9%B4%E6%80%BB%E7%BB%93/"/>
+    <id>http://xingbofeng.github.io/2017/01/01/我的2016年总结/</id>
+    <published>2017-01-01T13:06:00.000Z</published>
+    <updated>2017-01-01T13:34:57.660Z</updated>
+    
+    <content type="html"><![CDATA[<p>2016年算是我的人生职业生涯发展较为重要的一年，也算是人生的一道分界线。<br>无论以前的每次人生十字路口边，我是如何选择，今年的选择也算是令我满意。<br><a id="more"></a></p>
+<h2 id="职业发展"><a href="#职业发展" class="headerlink" title="职业发展"></a>职业发展</h2><p>2016年是处于我大二的尾巴和大三的开始。在此期间，我依据学校对本科生的培养计划和对自我未来职业发展的思考。分别参与了企业实训以及自行联系了一家公司进行实习，岗位均为前端开发。以下分别对于技术、工作和人际交往作出总结和反省。</p>
+<h3 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h3><ul>
+<li>自己的简历从无到有，搭建好了个人网站及开始活跃于开源社区。</li>
+<li>在HTML、CSS页面布局技术方面，我从仅仅使用最简单的CSS进行简单切图，到如今，对页面布局、文档流、盒模型等理解得更为深刻，如熟练使用flex进行布局并爱上了弹性盒子布局技术。</li>
+<li>在原生JavaScript及浏览器DOM技术方面，我从仅仅会简单的JavaScript到如今能熟悉DOM API、使用jQuery进行DOM操作和发送HTTP请求，并熟练使用es6新技术，如解构、作用域、async函数、promise对象等。</li>
+<li>在框架的使用方面，基本熟练使用React技术栈进行页面开发，这是在以前我所不敢想象的高度。</li>
+<li>在服务端和后端知识了解方面，基本熟悉linux（Mac OSX）工作流，能独立完成服务器配置和页面上线等功能，对nodejs，特别是express框架也有所学习，但不够深入。</li>
+</ul>
+<h3 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h3><ul>
+<li>在今年暑假，我前往四川日报网络传媒发展有限公司进行企业实训，在其中，基本依靠自我学习，对基于es5的前端技术有全面的掌握，特别是原生JS的熟练程度（如原型、闭包、作用域等），并能使用jQuery实现简单的页面动态效果。</li>
+<li>在今年开学初，我接手了学院的ASMS项目，在其中负责前端开发和设计工作，在其中，基本熟悉了完整项目开发流程和团队合作，能与后端进行良好的交互实现页面的动态渲染。</li>
+<li>在今年11月，我向知道创宇投递简历，并顺利通过面试。在其中参与了一期完整商业项目的开发工作，并在其中，对现代前端开发有基本的认识，并熟悉了es6+React技术栈和敏捷开发流程。</li>
+<li>在今年年末，我向百度和搜狐投递简历，到今天（2017.01.01），已收到搜狐的正式offer和百度的口头offer，如不出意外，我将前往百度进行为期半年的实习。</li>
+</ul>
+<h3 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h3><p>今年是我进入职场的头半年，我依然存在许多不足</p>
+<ul>
+<li>在四川日报实训期间，由于水平受限，没有参与太多内部项目的开发。</li>
+<li>在ASMS项目中，没有在团队后端离开后，真正有想过挽救这个项目，继续把它做完的想法。</li>
+<li>在知道创宇实习期间，与设计之间的沟通存在一些障碍，并有部分表露出自己的情绪，幸好在后来得到同事的提醒，顺利完成了一期开发工作。</li>
+<li>在知道创宇实习期间，不太注重个人形象，希望以后能加以注意。</li>
+</ul>
+<h2 id="明年展望"><a href="#明年展望" class="headerlink" title="明年展望"></a>明年展望</h2><ul>
+<li>加强锻炼</li>
+<li>学习python</li>
+<li>实习顺利，能成功转正</li>
+<li>把学分修完，为2018年毕业做准备</li>
+<li>目标是BAT的offer</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2016年算是我的人生职业生涯发展较为重要的一年，也算是人生的一道分界线。&lt;br&gt;无论以前的每次人生十字路口边，我是如何选择，今年的选择也算是令我满意。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="总结" scheme="http://xingbofeng.github.io/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript触发onScoll事件的函数节流</title>

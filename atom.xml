@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xingbofeng.github.io/"/>
-  <updated>2017-05-09T05:04:00.000Z</updated>
+  <updated>2017-05-09T14:47:08.000Z</updated>
   <id>http://xingbofeng.github.io/</id>
   
   <author>
@@ -19,16 +19,101 @@
     <title>博客迁移</title>
     <link href="http://xingbofeng.github.io/2017/05/09/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
     <id>http://xingbofeng.github.io/2017/05/09/博客迁移/</id>
-    <published>2017-05-09T04:57:28.000Z</published>
-    <updated>2017-05-09T05:04:00.000Z</updated>
+    <published>2017-05-09T14:46:04.000Z</published>
+    <updated>2017-05-09T14:47:08.000Z</updated>
     
-    <content type="html"><![CDATA[<p>请移步：<a href="https://blog.xingbofeng.com/" target="_blank" rel="external">https://blog.xingbofeng.com/</a> ，本静态博客不再更新。</p>
+    <content type="html"><![CDATA[<p>请移步 <a href="https://blog.xingbofeng.com" target="_blank" rel="external">https://blog.xingbofeng.com</a>  ，本静态博客不再更新。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;请移步：&lt;a href=&quot;https://blog.xingbofeng.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://blog.xingbofeng.com/&lt;/a&gt; ，本静态博客不再更新。&lt;/p&gt;
+      &lt;p&gt;请移步 &lt;a href=&quot;https://blog.xingbofeng.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://blog.xingbofeng.com&lt;/a&gt;  ，本静态博客不再更新。&lt;/p&gt;
 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>邢博峰 - 个人简历</title>
+    <link href="http://xingbofeng.github.io/2017/05/09/%E9%82%A2%E5%8D%9A%E5%B3%B0%20-%20%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/"/>
+    <id>http://xingbofeng.github.io/2017/05/09/邢博峰 - 个人简历/</id>
+    <published>2017-05-09T14:42:53.000Z</published>
+    <updated>2017-05-09T14:43:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="邢博峰"><a href="#邢博峰" class="headerlink" title="邢博峰"></a>邢博峰</h1><ul>
+<li>应聘岗位：Web前端开发实习生</li>
+<li>性别：男</li>
+<li>年龄：20岁</li>
+<li>联系方式：13402808158</li>
+<li>邮箱：<a href="mailto:me@xingbofeng.com" target="_blank" rel="external">me@xingbofeng.com</a></li>
+<li>个人博客：<a href="https://blog.xingbofeng.com/" target="_blank" rel="external">https://blog.xingbofeng.com/</a></li>
+<li>GitHub：<a href="https://github.com/xingbofeng" target="_blank" rel="external">https://github.com/xingbofeng</a></li>
+</ul>
+<h2 id="教育背景"><a href="#教育背景" class="headerlink" title="教育背景"></a>教育背景</h2><p>2014.09-2018.06<br>电子科技大学    本科<br>信息与软件工程学院    软件工程（网络安全工程）</p>
+<h2 id="专业证书"><a href="#专业证书" class="headerlink" title="专业证书"></a>专业证书</h2><ul>
+<li>CCF计算机软件能力认证  36.27%  优秀</li>
+<li>大学英语四级  优秀</li>
+</ul>
+<h2 id="专业技能"><a href="#专业技能" class="headerlink" title="专业技能"></a>专业技能</h2><ul>
+<li>熟练运用<code>HTML</code>、<code>CSS</code>等网页重构技术进行页面开发，对页面布局、文档流、盒模型等有自己的理解，熟悉<code>CSS3</code>、<code>HTML5</code>新特性;</li>
+<li>熟悉<code>客户端JavaScript</code>及<code>浏览器DOM</code>技术，但不仅限于<code>JavaScript</code>及<code>浏览器DOM</code>，对于常用<code>JavaScript</code>框架和类库（如<code>jQuery</code>、<code>Bootstrap</code>等）也熟练掌握;</li>
+<li>熟悉<code>ECMAScript6</code>及基于<code>webpack</code>的前端模块化构建工作流;</li>
+<li>熟悉<code>React技术栈</code>，包括但不仅限于：<code>React &amp; Redux</code>、<code>Immutable</code>、<code>Ant-design</code>、<code>Mocha</code>等<code>React</code>生态圈框架及类库，并有相关项目开发经验。此外，对<code>Vue</code>技术栈、<code>微信小程序</code>也有所了解，有相关个人项目经验，但未曾深入;</li>
+<li>了解<code>服务端JavaScript</code>，能使用<code>Express</code>、<code>Hapi</code>等框架进行简单的接口开发;</li>
+<li>熟悉<code>git</code>工作流及常用的<code>linux</code>（或<code>Mac OSX</code>）命令，对服务器配置与环境搭建等也有所了解。习惯使用<code>Mac OSX</code> + <code>Sublime Text</code> + <code>Google Chrome</code> + <code>iTrem2</code>的开发环境;</li>
+</ul>
+<h2 id="实习经历"><a href="#实习经历" class="headerlink" title="实习经历"></a>实习经历</h2><h3 id="2017-02-至今-网易有道-精品课产品部-研发组-前端实习生"><a href="#2017-02-至今-网易有道-精品课产品部-研发组-前端实习生" class="headerlink" title="2017.02-至今    网易有道    精品课产品部    研发组  前端实习生"></a>2017.02-至今    网易有道    精品课产品部    研发组  前端实习生</h3><ul>
+<li>有道精品课 - 智能题库、有道精品课 - 测试系统(线上入口为<code>网易有道精品课APP</code>)与<a href="https://exam.youdao.com" target="_blank" rel="external">有道精品课 - wap版四六级模考</a>研发工作;</li>
+<li>有道精品课 - wap版四六级模考为前端基于<code>Vue</code> &amp; <code>Vuex</code>技术栈的<code>wap</code>版的应用。 使用<code>Vue-Router</code>生成的单页应用。项目分为入口页(<code>jQuery</code>写的静态页面，用于临时宣传)、答题卡页(用户填涂答题卡与答案解析共用页面)、成绩单页(用户提交 答案后显示成绩单页面)、计时页(模拟考试过程中计时模块)四个模块进行开发 ，我在其中负责技术选型、项目搭建、答题卡页和成绩单页的功能开发工作;</li>
+<li>有道精品课 - 智能题库为前端基于<code>React&amp;Redux</code>技术栈的<code>wap版</code>的应用。使用<code>React-Router</code>生成的单页应用，最终打包到<code>有道精品课APP</code>中。项目氛围知识树(包括<code>首页</code>、<code>chapter页</code>、<code>section页</code>)+测试页(主要包括<code>单选题</code>、<code>多选题</code>和<code>问答题</code>组件)两个模块进行开发，我在其中负责知识树所有功能和页面开发工作;</li>
+<li>有道精品课 - 测试系统为前端基于<code>React&amp;Redux</code>技术栈的<code>web版</code>+<code>wap版</code>的应用。其中<code>wap版</code>为使用<code>React-Router</code>生成的单页应用，最终打包到<code>有道精品课APP</code>中。我在其中负责项目末期版本迭代及相关bug修复;</li>
+<li>有道精品课 - 425考神页面开发（独立开发）。后台为运营可在<code>有道CMS</code>配置的大型活动应用。其中包括三个页面（主页、预热页、起源页），我在其中初次尝试使用<code>Vue</code>技术栈并快速完成开发工作；</li>
+<li>有道精品课其它市场活动的页面开发（<code>jQuery</code>技术栈）;<h3 id="2017-01-16-2017-02-20-搜狐-快站平台部-主站组-研发实习生"><a href="#2017-01-16-2017-02-20-搜狐-快站平台部-主站组-研发实习生" class="headerlink" title="2017.01.16-2017.02.20    搜狐    快站平台部    主站组    研发实习生"></a>2017.01.16-2017.02.20    搜狐    快站平台部    主站组    研发实习生</h3></li>
+<li>维护<a href="http://www.kuaizhan.com/" target="_blank" rel="external">搜狐快站</a>快文模块;</li>
+<li>增添编辑器首行缩进功能和编辑器bug修复;</li>
+</ul>
+<h3 id="2016-11-2016-12-知道创宇-产品技术中心-成都研发部-研发实习生"><a href="#2016-11-2016-12-知道创宇-产品技术中心-成都研发部-研发实习生" class="headerlink" title="2016.11-2016.12    知道创宇    产品技术中心    成都研发部    研发实习生"></a>2016.11-2016.12    知道创宇    产品技术中心    成都研发部    研发实习生</h3><ul>
+<li>主要参与<a href="http://www.qixincha.com" target="_blank" rel="external">企信查</a>的前端页面开发工作(即将上线);</li>
+<li>项目前端基于公司内部框架<a href="https://github.com/knownsec/generator-modation" target="_blank" rel="external">generator-modation</a>构建，其中涉及到<code>React &amp; Redux</code>、<code>React-router</code>、<code>Immutable</code>、<code>Ant-design</code>等框架及类库，通过JavaScript异步请求Python后台API;</li>
+<li>采用<code>gitlab</code>作项目管理，与产品经理及UI设计师协调，完成前端全部页面(主页、详情页面、列表页面)的开发工作及部分数据逻辑。</li>
+</ul>
+<h3 id="2016-07-2016-08-四川日报网络传媒发展有限公司-技术部-前端实习生"><a href="#2016-07-2016-08-四川日报网络传媒发展有限公司-技术部-前端实习生" class="headerlink" title="2016.07-2016.08    四川日报网络传媒发展有限公司     技术部    前端实习生"></a>2016.07-2016.08    四川日报网络传媒发展有限公司     技术部    前端实习生</h3><ul>
+<li>主要参与<a href="http://wz.scol.com.cn/web/" target="_blank" rel="external">四川日报网 - 问政四川</a>的前端页面开发工作及四川在线一些活动页面的编写;</li>
+</ul>
+<h2 id="校内项目经历-个人项目经历"><a href="#校内项目经历-个人项目经历" class="headerlink" title="校内项目经历/个人项目经历"></a>校内项目经历/个人项目经历</h2><p>以下内容多为我利用业余时间和在校期间所写的小项目，均可以在我的<a href="https://github.com/xingbofeng" target="_blank" rel="external">GitHub</a>查看源码及在线版。</p>
+<h3 id="2016-09-2016-10-ASMS"><a href="#2016-09-2016-10-ASMS" class="headerlink" title="2016.09 - 2016.10    ASMS"></a>2016.09 - 2016.10    ASMS</h3><ul>
+<li>项目为电子科技大学学生毕业标准达成度系统，由电子科技大学信息与软件工程学院创新工坊发布并作项目管理，<a href="https://github.com/xingbofeng/ASMS" target="_blank" rel="external">该项目</a>已发布在GitHub;</li>
+<li>项目前端基于<code>bootstrap</code>框架构建，通过<code>jQuery Ajax</code>与后台进行交互。后台则采用<code>PHP</code>基于<code>laravel</code>框架的架构，连接<code>MySQL</code>数据库;</li>
+<li>采用github作项目管理，在其中负责UI设计、前端开发等工作，统筹前端架构并完成项目第一期及第二期功能开发。<h3 id="2017-04-单页应用-仿豆瓣电影"><a href="#2017-04-单页应用-仿豆瓣电影" class="headerlink" title="2017.04    单页应用:仿豆瓣电影"></a>2017.04    单页应用:仿豆瓣电影</h3></li>
+<li>基于Vue、Vuex、Vue-Router等技术栈开发的模仿豆瓣电影应用，持续版本迭代 与维护中。项目地址为:<a href="https://github.com/xingbofeng/douban-movie" target="_blank" rel="external">https://github.com/xingbofeng/douban-movie</a></li>
+<li>在线访问<a href="https://douban.xingbofeng.com" target="_blank" rel="external">https://douban.xingbofeng.com</a><h4 id="2017-02-关于CSS-Flexbox和Grid布局的GitBook教程"><a href="#2017-02-关于CSS-Flexbox和Grid布局的GitBook教程" class="headerlink" title="2017.02    关于CSS Flexbox和Grid布局的GitBook教程"></a>2017.02    关于CSS Flexbox和Grid布局的GitBook教程</h4></li>
+<li>对<code>Flexbox</code>布局与<code>Grid</code>布局的研究;</li>
+<li>在线访问<a href="https://www.xingbofeng.com/css-grid-flex/" target="_blank" rel="external">https://www.xingbofeng.com/css-grid-flex/</a><h3 id="2017-01-微信小程序-音乐播放器"><a href="#2017-01-微信小程序-音乐播放器" class="headerlink" title="2017.01    微信小程序:音乐播放器"></a>2017.01    微信小程序:音乐播放器</h3></li>
+<li>出于个人爱好开发的微信小程序应用，项目地址为 :<a href="https://github.com/xingbofeng/wx-audio" target="_blank" rel="external">https://github.com/xingbofeng/wx-audio</a></li>
+<li>在其中运用了微信小程序相关技术栈及<code>Express</code>实现请求转发。<h3 id="2017-01-单页应用-你画我猜"><a href="#2017-01-单页应用-你画我猜" class="headerlink" title="2017.01    单页应用:你画我猜"></a>2017.01    单页应用:你画我猜</h3></li>
+<li>出于个人爱好开发的你画我猜应用，项目地址为 :<a href="https://github.com/xingbofeng/paintCanvas" target="_blank" rel="external">https://github.com/xingbofeng/paintCanvas</a></li>
+<li>在其中运用了<code>Vue</code>、<code>sockit.io</code>、<code>canvas</code>技术。<h3 id="……-More"><a href="#……-More" class="headerlink" title="……(More)"></a>……(<strong>More</strong>)</h3></li>
+<li>访问<a href="https://github.com/xingbofeng" target="_blank" rel="external">GitHub</a></li>
+</ul>
+<h3 id="工作室经历"><a href="#工作室经历" class="headerlink" title="工作室经历"></a>工作室经历</h3><ul>
+<li>电子科技大学星辰工作室</li>
+<li>电子科技大学网络管理委员会</li>
+</ul>
+<h2 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a>自我评价</h2><ul>
+<li>热爱前端新技术，有较强的学习能力和项目管理能力;</li>
+<li>常活跃于开源社区，对开源有浓厚兴趣，乐于与大家分享技术和归纳自己所学到的<br>东西。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;邢博峰&quot;&gt;&lt;a href=&quot;#邢博峰&quot; class=&quot;headerlink&quot; title=&quot;邢博峰&quot;&gt;&lt;/a&gt;邢博峰&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;应聘岗位：Web前端开发实习生&lt;/li&gt;
+&lt;li&gt;性别：男&lt;/li&gt;
+&lt;li&gt;年龄：20岁&lt;/li&gt;
+&lt;li&gt;联系方式：
     
     </summary>
     

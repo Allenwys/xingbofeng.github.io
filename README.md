@@ -6,7 +6,7 @@
 * 第一版博客是使用GitHub Pages + Hexo的静态博客，后废弃
 * [第二版博客](http://angryzhangzhe.cn)使用`75team`的`FireKylin`构建，感谢`75team`对开源社区的无私分享。
 
-这一次采用`repository issus`管理，不计划做原博客文章的迁移。
+这一次采用`repository issus`管理，只迁移了部分原博客文章。
 
 查看2017年07月之前的文章可到[第二版博客](http://angryzhangzhe.cn)或[第二版博客存档仓库](https://github.com/xingbofeng/blog)进行查看。
 

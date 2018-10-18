@@ -5,7 +5,7 @@ var urlsToCache = [
   '/favicon.ico',
 ];
 
-var CACHE_NAME = 'counterxing_blog_v1';
+var CACHE_NAME = 'counterxing_blog_v2';
 
 self.addEventListener('install', function(event) {
   self.skipWaiting();
@@ -32,7 +32,7 @@ self.addEventListener('fetch', function(event) {
 
 
 self.addEventListener('activate', function(event) {
-  var cacheWhitelist = ['counterxing_blog_v1'];
+  var cacheWhitelist = ['counterxing_blog_v2'];
 
   event.waitUntil(
     caches.keys().then(function(cacheNames) {

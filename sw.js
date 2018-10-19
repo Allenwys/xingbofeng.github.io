@@ -5,16 +5,17 @@ var urlsToCache = [
   '/favicon.ico',
 ];
 
-var CACHE_NAME = 'counterxing_blog_v2';
+var CACHE_NAME = 'counterxing_blog_v5';
 
 self.addEventListener('install', function(event) {
-  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME)
     .then(function(cache) {
       return cache.addAll(urlsToCache);
+    }).then(function() {
+      self.skipWaiting();
     })
-  );
+  )
 });
 
 self.addEventListener('fetch', function(event) {
@@ -32,7 +33,7 @@ self.addEventListener('fetch', function(event) {
 
 
 self.addEventListener('activate', function(event) {
-  var cacheWhitelist = ['counterxing_blog_v2'];
+  var cacheWhitelist = ['counterxing_blog_v5'];
 
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
@@ -43,6 +44,8 @@ self.addEventListener('activate', function(event) {
           }
         })
       );
+    }).then(function() {
+      return self.clients.claim();
     })
-  );
+  )
 });

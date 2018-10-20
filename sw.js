@@ -23,7 +23,6 @@ self.addEventListener('fetch', function(event) {
     caches.match(event.request)
     .then(function(response) {
       if (response) {
-        console.log(response);
         return response;
       }
       return fetch(event.request);
@@ -48,4 +47,22 @@ self.addEventListener('activate', function(event) {
       return self.clients.claim();
     })
   )
+});
+
+self.addEventListener('push', function(event) {
+  const title = event.data.text();
+  const options = {
+    body: event.data.text(),
+    icon: './images/logo/logo512.png',
+    badge: './images/logo/logo512.png'
+  };
+
+  event.waitUntil(self.registration.showNotification(title, options));
+});
+
+self.addEventListener('notificationclick', function(event) {
+  event.notification.close();
+  event.waitUntil(
+    clients.openWindow('http://http://qm36mmz.xyz/')
+  );
 });

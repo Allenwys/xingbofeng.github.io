@@ -7,7 +7,7 @@ var urlsToCache = [
   '/manifest.json',
 ];
 
-var CACHE_NAME = 'counterxing_blog_v1';
+var CACHE_NAME = 'counterxing_blog_v2';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
@@ -34,7 +34,7 @@ self.addEventListener('fetch', function(event) {
 
 
 self.addEventListener('activate', function(event) {
-  var cacheWhitelist = ['counterxing_blog_v1'];
+  var cacheWhitelist = ['counterxing_blog_v2'];
 
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
@@ -52,19 +52,71 @@ self.addEventListener('activate', function(event) {
 });
 
 self.addEventListener('push', function(event) {
-  const title = event.data.text();
-  const options = {
-    body: event.data.text(),
-    icon: './images/logo/logo512.png',
-    badge: './images/logo/logo512.png'
-  };
+  const promiseChain = clients.matchAll({
+      type: 'window',
+      includeUncontrolled: true
+    })
+    .then((windowClients) => {
+      let mustShowNotification = true;
 
-  event.waitUntil(self.registration.showNotification(title, options));
+      for (let i = 0; i < windowClients.length; i++) {
+        const windowClient = windowClients[i];
+        if (windowClient.focused) {
+          mustShowNotification = false;
+          break;
+        }
+      }
+
+      return mustShowNotification;
+    })
+    .then((mustShowNotification) => {
+      if (mustShowNotification) {
+        return registration.getNotifications()
+          .then(notifications => {
+            let options = {
+              icon: './images/logo/logo512.png',
+              badge: './images/logo/logo512.png'
+            };
+            let title = event.data.text();
+            if (notifications.length) {
+              options.body = `您有${notifications.length}条新消息`;
+            } else {
+              options.body = event.data.text();
+            }
+            return self.registration.showNotification(title, options);
+
+          });
+      } else {
+        console.log('用户已经聚焦于当前页面，不需要推送。');
+      }
+    });
 });
 
 self.addEventListener('notificationclick', function(event) {
   event.notification.close();
-  event.waitUntil(
-    clients.openWindow('http://http://qm36mmz.xyz/')
-  );
+  const urlToOpen = self.location.origin + '/index.html';
+
+  const promiseChain = clients.matchAll({
+      type: 'window',
+      includeUncontrolled: true
+    })
+    .then((windowClients) => {
+      let matchingClient = null;
+
+      for (let i = 0; i < windowClients.length; i++) {
+        const windowClient = windowClients[i];
+        if (windowClient.url === urlToOpen) {
+          matchingClient = windowClient;
+          break;
+        }
+      }
+
+      if (matchingClient) {
+        return matchingClient.focus();
+      } else {
+        return clients.openWindow(urlToOpen);
+      }
+    });
+
+  event.waitUntil(promiseChain);
 });

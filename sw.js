@@ -3,9 +3,11 @@ var urlsToCache = [
   '/index.js',
   '/style.css',
   '/favicon.ico',
+  '/sw-register.js',
+  '/manifest.json',
 ];
 
-var CACHE_NAME = 'counterxing_blog_v5';
+var CACHE_NAME = 'counterxing_blog_v1';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
@@ -32,7 +34,7 @@ self.addEventListener('fetch', function(event) {
 
 
 self.addEventListener('activate', function(event) {
-  var cacheWhitelist = ['counterxing_blog_v5'];
+  var cacheWhitelist = ['counterxing_blog_v1'];
 
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
